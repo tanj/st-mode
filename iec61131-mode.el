@@ -72,7 +72,7 @@
 	    "SINGLE" "STRUCT" "TASK" "THEN" "TO"
 	    "TYPE" "UNTIL" "VAR" "VAR_ACCESS" "VAR_CONFIG"
 	    "VAR_EXTERNAL" "VAR_GLOBAL" "VAR_INPUT" "VAR_IN_OUT"
-	    "VAR_TEMP" "WHILE" "WITH"))
+	    "VAR_TEMP" "WHILE" "WITH" "METHOD"))
 
 
 (defvar iec61131-multi-line-comment-regex nil
