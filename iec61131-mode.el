@@ -22,6 +22,9 @@
 (add-to-list 'auto-mode-alist
              '("\\.st\\'" . iec61131-mode))
 
+(defvar iec61131-mode-tab-width nil
+    "iec61131 tab-width")
+(setq iec61131-mode-tab-width 4)
 
 (defun iec61131-regex-endswith (seq)
   ""
@@ -190,7 +193,8 @@
   (setq-local comment-end "*)")
   (setq-local font-lock-defaults
               '(iec61131-font-lock-keywords nil t)) ;set CASE-FOLD t
-  (setq-local indent-line-function 'iec61131-indent-line))
+  (setq-local indent-line-function 'iec61131-indent-line)
+  (setq-local tab-width iec61131-mode-tab-width))
 
 (provide 'iec61131-mode)
 
